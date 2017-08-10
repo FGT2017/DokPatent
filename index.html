@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DÖK Patent</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-16">
+</head>
+<body>
+	<header id="header" >
+	<img src="patent.jpeg" onclick="return mutat(1)"><br> <div onclick="return mutat(1)"><b>DÖK Patent</b></div>
+		<button onclick="return Show(1)" class="button1">Főoldal</button>
+		<!--<button onclick="return mutat(2)" class="button1">Hírek</button>-->
+		<button onclick="return Show(3)" class="button1">Kapcsolat</button>
+		<button onclick="return Show(4)" class="button1">Rólunk</button>
+		<button onclick="return Show(5)" class="button1">Előadók</button>
+	</header>
+
+	<script>
+		volt="div_1"
+		function Show(x)
+		{
+		if(volt!="")
+   			document.getElementById(volt).style.display="none"
+		volt='div_'+x
+			document.getElementById(volt).style.display="block"
+		return false
+		}
+
+	</script>
+
+	<div id="left_sidebar">
+		<div>
+			<blockquote>
+			<h4 id="main_tag">Címkék<br>
+				<a href="#" class="tag" onclick="return Show(4)">DÖK Patent</a>
+				<br />
+				<a href="#" class="tag" onclick="return Show(3)">Elérhetőség</a>
+				<br />
+				<a href="#" class="tag" onclick="return Show(5)">Előadások</a>
+				<br />
+				<a href="#" class="tag" onclick="return Show(5)">Ajánlók</a>
+				<!--<a href="#" class="tag" onclick="return mutat(2)">Újdonságok,</a>-->
+			</h4>
+			</blockquote>
+		</div>
+	</div>
+	<div id="right_sidebar">
+		<blockquote>
+		<div id="div_1" style="display:block">
+			<h4 class="title">Főoldal<br><br>
+			<div class="tidings">Üdvözlünk az oldalon!</div>
+			<!--<div class="tidings">
+				<mark>Beindult az oldal</mark><br>
+				<mark>Az oldal elindulásával a DÖK Patent nevű...</mark><br>
+				<button>olvass tovább=></button>
+			</div>-->
+			</h4>
+		</div>
+		<div id="div_2" style="display:none">
+			<h4 class="title">Hírek</h4>
+		</div>
+		<div id="div_3" style="display:none">
+			<h4 class="title">Kapcsolat<br><br>
+				<div class="tidings">
+					Ha kérdésed, észre vételed, ajánlásod van, nyugodtan írj nekünk a <mark>"dokpatent@gmail.com"</mark> e-mail címre!<br>
+            		Ha tudunk válaszolunk!<br> Szívesen fogadjuk az oldallal kapcsolatos észrevételeket; előadók ajánlását; illetve videók beküldését, melyek olyan előadásokat tartalmaznak, amik segítséül szolgálhatnak a tanároknak és a diákoknak!
+            	</div>
+			</h4>
+		</div>
+		<div id="div_4" style="display:none">
+			<h4 class="title">Rólunk<br><br>
+				<div class="tidings">
+					Néhány szó a DÖK Patentről. Ez a csapat 2017. február. 4-én alakult a Székesfehérváron megrendezett Országos Diákparlamenten.<br>
+            		<u>Célok:</u><br>
+                	1.Előadók (szakmai) és iskolák kapcsolatának segítsége<br>
+                	2.Diákok informálása<br>
+				</div>
+			</h4>
+		</div>
+		<div id="div_5" style="display:none">
+			<h4 class="title">Előadók, Előadások<br><br>
+			<div class="tidings">1. Menő a tanári pálya (videó)<br>
+				<a href="https://www.youtube.com/watch?v=8i9olqoHkBw">
+            		<div>lejátszás</div>
+        		</a><br>
+        		2.Előadók (táblázat)<br>
+        		<a href="https://docs.google.com/spreadsheets/d/1qHjrRijqUgBDJNT4UycHHBLEq_zz3EOZKIrplO4GU5w/edit#gid=0">link</a>
+			</div>
+			</h4>
+		</div>
+		</blockquote>
+	</div>
+	<div style="clear: both;"/>
+
+	<div id="footer">
+		<button onclick="return Show(1)" class="button2">Főoldal</button>
+		<!--<button onclick="return mutat(2)" class="button2">Hírek</button>-->
+		<button onclick="return Show(3)" class="button2">Kapcsolat</button>
+		<button onclick="return Show(4)" class="button2">Rólunk</button>
+		<button onclick="return Show(5)" class="button2">Előadók</button>
+	</div>
+
+	<div style='text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: pointer;line-height: 0;'><a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&utm_campaign=000_logo&utm_medium=website_dokpatent&utm_content=footer_img"><img src="https://cloud.githubusercontent.com/assets/23024110/20663010/9968df22-b55e-11e6-941d-edbc894c2b78.png"  alt="www.000webhost.com"></a></div></body>
+	<footer id="footer">&copy; DÖK Patent</footer>
+</html>
